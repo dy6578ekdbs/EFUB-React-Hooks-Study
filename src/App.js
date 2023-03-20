@@ -3,16 +3,21 @@ import "./App.css";
 import React, { useState } from "react";
 import { ReactDOM } from "react";
 
-function App() {
-  const [item, setItem] = useState(1);
-  const increateItem = () => setItem(item + 1);
-  const decreatItem = () => setItem(item - 1);
+const useInput = (initialValue) => {
+  const [value, setValue] = useState(initialValue);
+  const onChange = event => {
+    console.log(event.target);
+  }
+  return { value, onChange} ;
+};
 
+function App() {
+  const name = useInput("Mr.");
   return (
     <div className="App">
-      <h1>hello {item}</h1>
-      <button onClick={increateItem}>Increment</button>
-      <button onClick={decreatItem}>Decrement</button>
+      <h1>hello</h1>
+      <input placeholder="Name" {...name}></input> 
+      {/* spread 연산자 활용 */}
     </div>
   );
 }
