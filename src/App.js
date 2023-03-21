@@ -5,10 +5,11 @@ import { ReactDOM } from "react";
 import HookuseTab from "./HookuseTab";
 import HookuseInput2 from "./HookuseInput2";
 import HookuseState from "./HookuseState";
+import HookuseEffect from "./HookuseEffect";
 
 function App() {
   return (
-    <HookuseTab></HookuseTab>
+    <HookuseEffect></HookuseEffect>
   );
 }
 
