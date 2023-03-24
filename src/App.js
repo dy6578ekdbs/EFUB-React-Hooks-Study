@@ -6,10 +6,11 @@ import HookuseTab from "./HookuseTab";
 import HookuseInput2 from "./HookuseInput2";
 import HookuseState from "./HookuseState";
 import HookuseEffect from "./HookuseEffect";
+import HookuseTitle from "./HookuseTitle";
 
 function App() {
   return (
-    <HookuseEffect></HookuseEffect>
+    <HookuseTitle></HookuseTitle>
   );
 }
 
