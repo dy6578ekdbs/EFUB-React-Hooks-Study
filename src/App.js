@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HookuseEffect from "./hooks/HookuseEffect";
 import HookuseInput from "./hooks/HookuseInput";
 import HookuseInput2 from "./hooks/HookuseInput2";
 import HookuseState from "./hooks/HookuseState";
@@ -9,7 +10,8 @@ function App() {
     // <HookuseState />
     // <HookuseInput />
     // <HookuseInput2 />
-    <HookuseTab />
+    // <HookuseTab />
+    <HookuseEffect />
   );
 }
 
