@@ -1,20 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useInput from "./hooks/useInput";
-
-const useTabs = (initialTab, allTabs) => {
-  // if (!allTabs || !Array.isArray(allTabs)) {
-  //   return;
-  // }
-
-  const [currentIndex, setCurrentIndex] = useState(initialTab);
-
-  return {
-    currentItem: allTabs[currentIndex],
-    changeItem: setCurrentIndex,
-  };
-};
+import useTabs from "./hooks/useTabs";
+import useTitle from "./hooks/useTitle";
 
 function App() {
+  const titleUpdater = useTitle("loading");
+
   const content = [
     {
       tab: "sdfsdfdsf 1",
