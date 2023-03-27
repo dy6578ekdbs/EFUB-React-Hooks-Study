@@ -1,13 +1,13 @@
-import React, { useState, StrictMode, useEffect } from "react";
+import React, { useState, useEffect, StrictMode, useRef } from "react";
 import { createRoot } from "react-dom/client";
-import { useTitle } from "./useTitle";
+import { useClick } from "./useClick";
 
 const App = () => {
-  const titleUpdater = useTitle("Loading...");
-  setTimeout(() => titleUpdater("Home"), 5000);
+  const sayHello = () => console.log("say hello");
+  const title = useClick(sayHello);
   return (
     <div className="App">
-      <div>Hi</div>
+      <h1 ref={title}>Hi</h1>
     </div>
   );
 };
