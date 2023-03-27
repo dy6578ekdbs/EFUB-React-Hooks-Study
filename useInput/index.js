@@ -1,22 +1,23 @@
-import React, { useState, useEffect, StrictMode, useRef } from "react";
+import React, { useState, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { useClick } from "./useClick";
+import { useInput } from "./useInput";
 
 const App = () => {
-  const sayHello = () => console.log("say hello");
-  const title = useClick(sayHello);
-  return (
-    <div className="App">
-      <h1 ref={title}>Hi</h1>
-    </div>
-  );
+    const maxLen = (value) => value.length <= 10; // !value.includes("@")
+    const name = useInput("Mr.", maxLen);
+    return (
+      <div className="App">
+        <h1>Hello</h1>
+        <input placeholder="Name" {...name} />
+      </div>
+    );
 };
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+    <StrictMode>
+        <App />
+    </StrictMode>
 );
