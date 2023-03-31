@@ -9,9 +9,10 @@ import HookuseTitle from "./HookuseTitle";
 import HookuseClick from "./HookuseClick";
 import HookuseConfirm from "./HookuseConfirm";
 import HookusePreventLeave from "./HookusePreventLeave";
+import HookuseBeforeLeave from "./HookuseBeforeLeave";
 
 function App() {
-  return <HookusePreventLeave></HookusePreventLeave>;
+  return <HookuseBeforeLeave></HookuseBeforeLeave>;
 }
 
 export default App;
