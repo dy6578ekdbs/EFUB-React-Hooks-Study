@@ -7,9 +7,11 @@ import HookuseInput2 from "./HookuseInput2";
 import HookuseTabs from "./HookuseTabs";
 import HookuseTitle from "./HookuseTitle";
 import HookuseClick from "./HookuseClick";
+import HookuseConfirm from "./HookuseConfirm";
+import HookusePreventLeave from "./HookusePreventLeave";
 
 function App() {
-  return <HookuseClick></HookuseClick>;
+  return <HookusePreventLeave></HookusePreventLeave>;
 }
 
 export default App;
