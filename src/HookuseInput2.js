@@ -1,6 +1,5 @@
-import ReactDOM from "react-dom";
-import React, { useState } from "react";
-import "./styles.css";
+import "./App.css";
+import React, { useEffect, useState } from "react";
 
 const useInput = (initialValue, vaildator) => {
   const [value, setValue] = useState(initialValue);
@@ -19,7 +18,7 @@ const useInput = (initialValue, vaildator) => {
   return { value, onChange };
 };
 
-const App = () => {
+const HookuseInput2 = () => {
   const maxLen = (value) => !value.includes("@");
 
   const name = useInput("Mr.", maxLen);
@@ -32,5 +31,4 @@ const App = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default HookuseInput2;

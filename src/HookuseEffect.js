@@ -1,8 +1,7 @@
-import ReactDOM from "react-dom";
+import "./App.css";
 import React, { useEffect, useState } from "react";
-import "./styles.css";
 
-const App = () => {
+const HookuseEffect = () => {
   const sayHello = () => {
     console.log("hello");
   };
@@ -30,5 +29,4 @@ const App = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default HookuseEffect;

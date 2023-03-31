@@ -1,6 +1,5 @@
-import ReactDOM from "react-dom";
-import React, { useState } from "react";
-import "./styles.css";
+import "./App.css";
+import React, { useEffect, useState } from "react";
 
 const useInput = (initialValue) => {
   const [value, setValue] = useState(initialValue);
@@ -10,7 +9,7 @@ const useInput = (initialValue) => {
   return { value, onChange };
 };
 
-const App = () => {
+const HookuseInput = () => {
   const name = useInput("Mr.");
   return (
     <div className="App">
@@ -21,5 +20,4 @@ const App = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default HookuseInput;

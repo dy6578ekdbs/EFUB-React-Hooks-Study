@@ -1,6 +1,5 @@
-import ReactDOM from "react-dom";
+import "./App.css";
 import React, { useEffect, useState } from "react";
-import "./styles.css";
 
 const useTitle = (initialTitle) => {
   const [title, setTitle] = useState(initialTitle);
@@ -12,7 +11,7 @@ const useTitle = (initialTitle) => {
   return setTitle;
 };
 
-const App = () => {
+const HookuseTitle = () => {
   const titleUpdater = useTitle("Loading...");
   setTimeout(() => titleUpdater("Home"), 5000);
   return (
@@ -22,5 +21,4 @@ const App = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default HookuseTitle;
