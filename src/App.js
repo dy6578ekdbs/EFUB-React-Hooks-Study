@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HookuseBeforeLeave from "./hooks/HookuseBeforeLeave";
 import HookuseClick from "./hooks/HookuseClick";
 import HookuseConfirm from "./hooks/HookuseConfirm";
 import HookuseEffect from "./hooks/HookuseEffect";
@@ -19,7 +20,8 @@ function App() {
     // <HookuseTitle />
     // <HookuseClick />
     // <HookuseConfirm />
-    <HookusePreventLeave />
+    // <HookusePreventLeave />
+    <HookuseBeforeLeave />
   );
 }
 
