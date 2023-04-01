@@ -1,6 +1,5 @@
-import ReactDOM from "react-dom";
-import React, { useState } from "react";
-import "./styles.css";
+import "./App.css";
+import React, { useEffect, useState } from "react";
 
 const content = [
   {
@@ -14,18 +13,18 @@ const content = [
 ];
 
 const useTabs = (initialTab, allTabs) => {
+  const [currentIndex, setCurrentIndex] = useState(initialTab);
   if (!allTabs || !Array.isArray(allTabs)) {
     return;
   }
 
-  const [currentIndex, setCurrentIndex] = useState(initialTab);
   return {
     currentItem: allTabs[currentIndex],
     changeItem: setCurrentIndex,
   };
 };
 
-const App = () => {
+const HookuseTabs = () => {
   const { currentItem, changeItem } = useTabs(0, content);
   return (
     <div className="App">
@@ -38,5 +37,4 @@ const App = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default HookuseTabs;
