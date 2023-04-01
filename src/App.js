@@ -13,10 +13,11 @@ import HookusePreventLeave from "./HookusePreventLeave";
 import HookuseBefore from "./HookuseBefore";
 import HookuseFadeIn from "./HookuseFadeIn";
 import HookuseNetwork from "./HookuseNetwork";
+import HookuseScroll from "./HookuseScroll";
 
 function App() {
   return (
-    <HookuseNetwork></HookuseNetwork>
+    <HookuseScroll></HookuseScroll>
   );
 }
 
