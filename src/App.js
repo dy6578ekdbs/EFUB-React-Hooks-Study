@@ -10,10 +10,11 @@ import HookuseTitle from "./HookuseTitle";
 import HookuseClick from "./HookuseClick";
 import HookuseConfirm from "./HookuseConfirm";
 import HookusePreventLeave from "./HookusePreventLeave";
+import HookuseBefore from "./HookuseBefore";
 
 function App() {
   return (
-    <HookusePreventLeave></HookusePreventLeave>
+    <HookuseBefore></HookuseBefore>
   );
 }
 
