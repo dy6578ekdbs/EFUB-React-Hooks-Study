@@ -8,10 +8,12 @@ import HookuseState from "./HookuseState";
 import HookuseEffect from "./HookuseEffect";
 import HookuseTitle from "./HookuseTitle";
 import HookuseClick from "./HookuseClick";
+import HookuseConfirm from "./HookuseConfirm";
+import HookusePreventLeave from "./HookusePreventLeave";
 
 function App() {
   return (
-    <HookuseClick></HookuseClick>
+    <HookusePreventLeave></HookusePreventLeave>
   );
 }
 
