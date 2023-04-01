@@ -1,22 +1,23 @@
-import React, { useState, StrictMode, useEffect } from "react";
+import React, { useState, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { useTitle } from "./useTitle";
+import { useInput } from "./useInput";
 
 const App = () => {
-  const titleUpdater = useTitle("Loading...");
-  setTimeout(() => titleUpdater("Home"), 5000);
-  return (
-    <div className="App">
-      <div>Hi</div>
-    </div>
-  );
+    const maxLen = (value) => value.length <= 10; // !value.includes("@")
+    const name = useInput("Mr.", maxLen);
+    return (
+      <div className="App">
+        <h1>Hello</h1>
+        <input placeholder="Name" {...name} />
+      </div>
+    );
 };
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+    <StrictMode>
+        <App />
+    </StrictMode>
 );
