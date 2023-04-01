@@ -11,10 +11,11 @@ import HookuseClick from "./HookuseClick";
 import HookuseConfirm from "./HookuseConfirm";
 import HookusePreventLeave from "./HookusePreventLeave";
 import HookuseBefore from "./HookuseBefore";
+import HookuseFadeIn from "./HookuseFadeIn";
 
 function App() {
   return (
-    <HookuseBefore></HookuseBefore>
+    <HookuseFadeIn></HookuseFadeIn>
   );
 }
 
