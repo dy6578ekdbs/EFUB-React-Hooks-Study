@@ -7,10 +7,14 @@ import HookuseInput2 from "./HookuseInput2";
 import HookuseState from "./HookuseState";
 import HookuseEffect from "./HookuseEffect";
 import HookuseTitle from "./HookuseTitle";
+import HookuseClick from "./HookuseClick";
+import HookuseConfirm from "./HookuseConfirm";
+import HookusePreventLeave from "./HookusePreventLeave";
+import HookuseBefore from "./HookuseBefore";
 
 function App() {
   return (
-    <HookuseTitle></HookuseTitle>
+    <HookuseBefore></HookuseBefore>
   );
 }
 
