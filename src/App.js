@@ -9,22 +9,32 @@ import UseFadeInEx from "./hooks/UseFadeInEx";
 import UseNetworkEx from "./hooks/UseNetworkEx";
 import UseScrollEx from "./hooks/UseScrollEx";
 import UseFullscreenEx from "./hooks/UseFullscreenEx";
+import UseNotificationEx from "./hooks/UseNotificationEx";
+import UseAxiosEx from "./hooks/UseAxiosEx";
 
 function App() {
 	return (
 		<div className="App">
 			<h1>React Hooks Study</h1>
-			<UseInputEx />
-			<UseTabsEx />
-			<UseTitleEx />
-			<UseClickEx />
-			<UseConfirmEx />
-			<UsePreventLeaveEx />
-			<UseBeforeLeaveEx />
-			<UseFadeInEx />
-			<UseNetworkEx />
-			<UseScrollEx />
-			<UseFullscreenEx />
+			<div style={{ display: "flex" }}>
+				<div style={{ marginRight: "20px" }}>
+					<UseInputEx />
+					<UseTabsEx />
+					<UseTitleEx />
+					<UseClickEx />
+					<UseConfirmEx />
+					<UsePreventLeaveEx />
+					<UseBeforeLeaveEx />
+					<UseFadeInEx />
+					<UseNetworkEx />
+					<UseScrollEx />
+				</div>
+				<div>
+					<UseFullscreenEx />
+					<UseNotificationEx />
+					<UseAxiosEx />
+				</div>
+			</div>
 		</div>
 	);
 }

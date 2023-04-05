@@ -41,7 +41,7 @@ const UseFullscreenEx = () => {
 	};
 	const { element, triggerFull, exitFull } = useFullscreen(onFullS);
 	return (
-		<div style={{ position: "absolute" }}>
+		<div>
 			<div ref={element}>
 				<div>
 					<button onClick={exitFull}>Exit fullscreen</button>

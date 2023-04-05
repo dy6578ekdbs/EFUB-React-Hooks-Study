@@ -18,18 +18,16 @@ const useScroll = () => {
 const UseScrollEx = () => {
 	const { y } = useScroll();
 	return (
-		<div style={{ height: "80px", position: "relative" }}>
-			<div style={{ height: "200vh" }}>
-				<h1
-					style={{
-						color: y > 100 ? "red" : "blue",
-						position: "fixed",
-						zIndex: "1000",
-					}}
-				>
-					Hi
-				</h1>
-			</div>
+		<div style={{ height: "120vh" }}>
+			<h1
+				style={{
+					color: y > 100 ? "red" : "blue",
+					position: "fixed",
+					zIndex: "1000",
+				}}
+			>
+				Hi
+			</h1>
 		</div>
 	);
 };
