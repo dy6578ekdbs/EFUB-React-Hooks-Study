@@ -9,6 +9,8 @@ import HookusePreventLeave from "./hooks/HookusePreventLeave";
 import HookuseState from "./hooks/HookuseState";
 import HookuseTab from "./hooks/HookuseTab";
 import HookuseTitle from "./hooks/HookuseTitle";
+import HookuseFadeIn from "./hooks/HookuseFadeIn";
+import HookuseNetwork from "./hooks/HookuseNetwork";
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
     // <HookuseClick />
     // <HookuseConfirm />
     // <HookusePreventLeave />
-    <HookuseBeforeLeave />
+    // <HookuseBeforeLeave />
+    // <HookuseFadeIn />
+    <HookuseNetwork />
   );
 }
 
