@@ -13,9 +13,10 @@ import HookuseBeforeLeave from "./HookuseBeforeLeave";
 import HookuseFadeIn from "./HookuseFadeIn";
 import HookuseNetwork from "./HookuseNetwork";
 import HookuseScroll from "./HookuseScroll";
+import HookuseFullScreen from "./HookuseFullScreen";
 
 function App() {
-  return <HookuseScroll></HookuseScroll>;
+  return <HookuseFullScreen></HookuseFullScreen>;
 }
 
 export default App;
