@@ -11,6 +11,8 @@ import HookuseTab from "./hooks/HookuseTab";
 import HookuseTitle from "./hooks/HookuseTitle";
 import HookuseFadeIn from "./hooks/HookuseFadeIn";
 import HookuseNetwork from "./hooks/HookuseNetwork";
+import HookuseScroll from "./hooks/HookuseScroll";
+import HookuseFullScreen from "./hooks/HookuseFullScreen";
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
     // <HookusePreventLeave />
     // <HookuseBeforeLeave />
     // <HookuseFadeIn />
-    <HookuseNetwork />
+    // <HookuseNetwork />
+    // <HookuseScroll />
+    <HookuseFullScreen />
   );
 }
 
