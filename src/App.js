@@ -11,10 +11,14 @@ import HookuseClick from "./HookuseClick";
 import HookuseConfirm from "./HookuseConfirm";
 import HookusePreventLeave from "./HookusePreventLeave";
 import HookuseBefore from "./HookuseBefore";
+import HookuseFadeIn from "./HookuseFadeIn";
+import HookuseNetwork from "./HookuseNetwork";
+import HookuseScroll from "./HookuseScroll";
+import HookuseFullScreen from "./HookuseFullScreen";
 
 function App() {
   return (
-    <HookuseBefore></HookuseBefore>
+    <HookuseFullScreen></HookuseFullScreen>
   );
 }
 
