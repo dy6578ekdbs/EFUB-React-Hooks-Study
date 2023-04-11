@@ -9,10 +9,11 @@ import HookuseEffect from "./HookuseEffect";
 import HookuseTitle from "./HookuseTitle";
 import HookuseClick from "./HookuseClick";
 import HookuseNotification from "./HookuseNotification";
+import HookuseAxios from "./HookuseAxios";
 
 function App() {
   return (
-    <HookuseNotification></HookuseNotification>
+    <HookuseAxios></HookuseAxios>
   );
 }
 
