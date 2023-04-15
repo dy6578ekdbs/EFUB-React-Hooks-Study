@@ -1,30 +1,15 @@
 import "./App.css";
-import React, { useEffect, useRef } from "react";
-import ReactDom from "react-dom";
+import React, { useEffect, useState, useRef } from "react";
 
-const useClick = (onClick) => {
-  const element = useRef();
-  useEffect(() => {
-    if(element.current){
-      element.current.addEventListener("click", onClick);
-    }
-    return () => {
-      if(element.current){
-        element.current.removeEventListener("click", onClick);
-      } 
-    };
-  }, []);
-  return element;
-} 
-
-function HookuseClick() {
-  const sayHello = () => console.log("say hello");
-  const title = useClick(sayHello);
+const HookuseClick = () => {
+  const input = useRef();
+  setTimeout(() => input.current.focus(), 5000); 
   return (
     <div className="App">
-      <h1 ref={title}>hi</h1>
+      <div>hi</div>
+      <input ref={input} placeholder="hi"/>
     </div>
   );
-}
+};
 
 export default HookuseClick;
