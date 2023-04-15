@@ -14,6 +14,7 @@ import HookuseNetwork from "./hooks/HookuseNetwork";
 import HookuseScroll from "./hooks/HookuseScroll";
 import HookuseFullScreen from "./hooks/HookuseFullScreen";
 import HookuseNotification from "./hooks/HookuseNotification";
+import HookuseAxios from "./hooks/HookuseAxios";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
     // <HookuseNetwork />
     // <HookuseScroll />
     // <HookuseFullScreen />
-    <HookuseNotification />
+    // <HookuseNotification />
+    <HookuseAxios />
   );
 }
 
