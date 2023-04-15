@@ -29,7 +29,9 @@ const UseTabsEx = () => {
 	return (
 		<div>
 			{content.map((section, index) => (
-				<button onClick={() => changeItem(index)}>{section.tab}</button>
+				<button onClick={() => changeItem(index)} key={index}>
+					{section.tab}
+				</button>
 			))}
 			<div>{currentItem.content}</div>
 		</div>
