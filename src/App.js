@@ -8,12 +8,17 @@ import HookuseState from "./HookuseState";
 import HookuseEffect from "./HookuseEffect";
 import HookuseTitle from "./HookuseTitle";
 import HookuseClick from "./HookuseClick";
-import HookuseNotification from "./HookuseNotification";
-import HookuseAxios from "./HookuseAxios";
+import HookuseConfirm from "./HookuseConfirm";
+import HookusePreventLeave from "./HookusePreventLeave";
+import HookuseBefore from "./HookuseBefore";
+import HookuseFadeIn from "./HookuseFadeIn";
+import HookuseNetwork from "./HookuseNetwork";
+import HookuseScroll from "./HookuseScroll";
+import HookuseFullScreen from "./HookuseFullScreen";
 
 function App() {
   return (
-    <HookuseAxios></HookuseAxios>
+    <HookuseFullScreen></HookuseFullScreen>
   );
 }
 
